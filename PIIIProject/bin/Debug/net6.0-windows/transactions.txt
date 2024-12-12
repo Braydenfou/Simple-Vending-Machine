@@ -1,0 +1,108 @@
+------------------------------------
+Order Number: 990
+Item	Quantity	Price	Total
+MountainDew	3	3	9
+Caramilk	2	2	4
+Ruffles	2	2.3	4.6
+Gatorade	1	3	3
+Total Cost: $20.60
+------------------------------------
+------------------------------------
+Order Number: 251
+Item	Quantity	Price	Total
+MountainDew	4	3	12
+Caramilk	3	2	6
+Kitkats	3	2	6
+Total Cost: $24.00
+------------------------------------
+------------------------------------
+Order Number: 214
+Item	Quantity	Price	Total
+Kitkats	2	2	4
+Hersheys	1	2	2
+Total Cost: $6.00
+------------------------------------
+Order Number: 62
+Item	Quantity	Price	Total
+Kitkats	2	2	4
+Hersheys	1	2	2
+Total Cost: $6.00
+------------------------------------
+------------------------------------
+Order Number: 369
+Item	Quantity	Price	Total
+Caramilk	2	2	4
+MountainDew	2	3	6
+Hersheys	1	2	2
+Total Cost: $12.00
+------------------------------------
+------------------------------------
+Order Number: 182
+Item	Quantity	Price	Total
+Doritos	3	2.3	6.8999999999999995
+Total Cost: $6.90
+------------------------------------
+Order Number: 643
+Item	Quantity	Price	Total
+Doritos	3	2.3	6.8999999999999995
+Total Cost: $6.90
+------------------------------------
+------------------------------------
+Order Number: 825
+Item	Quantity	Price	Total
+Doritos	3	2.3	6.8999999999999995
+Total Cost: $6.90
+------------------------------------
+------------------------------------
+Order Number: 339
+Item	Quantity	Price	Total
+Reeses	2	2	4
+Lays	2	2.3	4.6
+Ruffles	1	2.3	2.3
+Total Cost: $10.90
+------------------------------------
+------------------------------------
+Order Number: 566
+Item	Quantity	Price	Total
+Reeses	2	2	4
+Lays	2	2.3	4.6
+Ruffles	1	2.3	2.3
+Total Cost: $10.90
+------------------------------------
+Order Number: 755
+Item	Quantity	Price	Total
+Reeses	2	2	4
+Lays	2	2.3	4.6
+Ruffles	1	2.3	2.3
+Total Cost: $10.90
+------------------------------------
+------------------------------------
+Order Number: 579
+Item	Quantity	Price	Total
+Reeses	2	2	4
+Lays	2	2.3	4.6
+Ruffles	1	2.3	2.3
+Total Cost: $10.90
+------------------------------------
+------------------------------------
+Order Number: 949
+Item	Quantity	Price	Total
+Caramilk	3	2	6
+Snickers	2	2	4
+Total Cost: $10.00
+------------------------------------
+------------------------------------
+Order Number: 142
+Item	Quantity	Price	Total
+Caramilk	3	2	6
+Snickers	2	2	4
+Reeses	2	2	4
+Ruffles	1	2.3	2.3
+Total Cost: $16.30
+------------------------------------
+------------------------------------
+Order Number: 552
+Item	Quantity	Price	Total
+Maynards	2	2	4
+Snickers	2	2	4
+Total Cost: $8.00

@@ -1,0 +1,31 @@
+﻿<Window x:Class="PIIIProject.Views.PaymentMethodWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIIIProject.Views"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="PaymentMethodWindow" Height="400" Width="300">
+    <StackPanel Margin="10,10,10,15">
+        <TextBlock Text="Payment Method"
+                   FontSize="25"
+                   HorizontalAlignment="Center"/>
+
+        <GroupBox Header="Card" Height="89" Width="250" Margin="10,50,10,10" HorizontalAlignment="Center" RenderTransformOrigin="0.458,0.955">
+            <WrapPanel Height="53">
+                <Button Content="Credit/Debit" Height="50" Width="150" Margin="40,0,0,0" Click="NavigateToCredit_Btn"/>
+            </WrapPanel>
+        </GroupBox>
+
+        <GroupBox Header="Bill Amounts" Height="150" Width="250" Margin="0,0,0,0">
+            <StackPanel>
+                <RadioButton Content="$5" Margin="5" Tag="5" Click="Cash_Btn"/>
+                <RadioButton Content="$10" Margin="5" Tag="10" Click="Cash_Btn"/>
+                <RadioButton Content="$20" Margin="5" Tag="20" Click="Cash_Btn"/>
+                <RadioButton Content="$50" Margin="5" Tag="50" Click="Cash_Btn"/>
+                <RadioButton Content="$100" Margin="5" Tag="100" Click="Cash_Btn"/>
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Window>

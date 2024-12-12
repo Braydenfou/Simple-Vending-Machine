@@ -1,0 +1,234 @@
+Programming Project Algorithm
+
+Idea: Vending Machine
+
+using System.ComponentModel;
+
+namespace PIIIProject
+{
+    internal class Products : IVendingMachine
+    {
+        #region Backing Fields
+        private int _skittles;
+        private int _lays;
+        private int _doritos;
+        private int _snickers;
+        private int _reeses;
+        private int _gatorade;
+        private int _mountainDew;
+        private int _hersheys;
+        private int _caramilk;
+        private int _maynards;
+        private int _kitkats;
+        private int _ruffles;
+        private int total = 0;
+        private int productTotal = 0;
+        #endregion
+        #region Constructors
+        public Products()
+        {
+            _skittles = 12;
+            _lays = 12;
+            _doritos = 12;
+            _snickers = 12;
+            _reeses = 12;
+            _gatorade = 12;
+            _mountainDew = 12;
+            _hersheys = 12;
+            _caramilk = 12;
+            _maynards = 12;
+            _kitkats = 12;
+            _ruffles = 12;
+        }
+        #endregion
+        #region Properties
+        //All properties have a throw message indicating if the product has run out.
+        public int Skittles
+        {
+            get { return _skittles; }
+            private set
+            {
+                if(value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _skittles = value;
+            }
+        }
+        public int Lays
+        {
+            get { return _lays; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _lays = value;
+            }
+        }
+        public int Doritos
+        {
+            get { return _doritos; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _doritos = value;
+            }
+        }
+        public int Snickers
+        {
+            get { return _snickers; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _snickers = value;
+            }
+        }
+        public int Reeses
+        {
+            get { return _reeses; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _reeses = value;
+            }
+        }
+        public int Gatorade
+        {
+            get { return _gatorade; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _gatorade = value;
+            }
+        }
+        public int MountainDew
+        {
+            get { return _mountainDew; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _mountainDew = value;
+            }
+        }
+        public int Hersheys
+        {
+            get { return _hersheys; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _hersheys = value;
+            }
+        }
+
+        public int Caramilk
+        {
+            get { return _caramilk; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _caramilk = value;
+            }
+        }
+        public int Maynards
+        {
+            get { return _maynards; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _maynards = value;
+            }
+        }
+        public int Kitkats
+        {
+            get { return _kitkats; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _kitkats = value;
+            }
+        }
+        public int Ruffles
+        {
+            get { return _ruffles; }
+            private set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException("There is no more of this product");
+                _ruffles = value;
+            }
+        }
+        #endregion
+        #region Methods
+        public string PickProduct(string item)
+        {
+            if (string.IsNullOrEmpty(item))
+                return $"this item is not available in this vending machine";
+            else
+            {
+                switch (item.ToLower())
+                {
+                    case "skittles":
+                        Skittles--;
+                        return $"{Skittles} skittles left";
+                    case "lays":
+                        Lays--;
+                        return $"{Lays} Lays left";
+                    case "doritos":
+                        Doritos--;
+                        return $"{Doritos} Doritos left"; //finished the pick product method
+                    case "snickers":
+                        Snickers--;
+                        return $"{Snickers} Snickers left";
+                    case "reeses":
+                        Reeses--;
+                        return $"{Reeses} Reeses left";
+                    case "gatorade":
+                        Gatorade--;
+                        return $"{Gatorade} Gatorade left";
+                    case "mountaindew":
+                        MountainDew--;
+                        return $"{MountainDew} Mountain Dew left";
+                    case "hersheys":
+                        Hersheys--;
+                        return $"{Hersheys} Hersheys left";
+                    case "caramilk":
+                        Caramilk--;
+                        return $"{Caramilk} Caramilk left";
+                    case "maynards":
+                        Maynards--;
+                        return $"{Maynards} Maynards left";
+                    case "kitkats":
+                        Kitkats--;
+                        return $"{Kitkats} Kitkats left";
+                    case "ruffles":
+                        Ruffles--;
+                        return $"{Ruffles} Ruffles left";
+                    default:
+                        return $"No items left, please try again later";
+
+                }
+            }
+        }
+        public 
+        public int AddTotal(int x)
+        {
+            return total += x;
+        }
+        public int AddProductTotal(int x)
+        {
+            return productTotal += x;
+        }
+        public void Clear()
+        {
+            
+        }
+        #endregion
+    }
+}

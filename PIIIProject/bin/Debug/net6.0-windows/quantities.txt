@@ -1,0 +1,12 @@
+Skittles,12
+Gatorade,12
+Hersheys,12
+Caramilk,12
+Snickers,12
+Lays,12
+Doritos,12
+MountainDew,12
+Maynards,12
+Kitkats,12
+Ruffles,12
+Reeses,12
